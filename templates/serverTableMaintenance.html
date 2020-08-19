@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div>
+        <form method='POST' action="" style="margin-top:50px; margin-left:150px; width:700px; background-color:skyblue;">
+            <fieldset class="form-group">
+                <h3 style="text-align: center;">Server Table Maintenace</h3>
+                <div style="margin-left: 50px;">
+                    {{ form.serverName.label() }} 
+                    {{ form.serverName(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />
+                <div style="margin-left: 50px;">
+                    {{ form.serverDomain.label() }}
+                    {{ form.serverDomain(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />
+                <div style="margin-left: 50px;">
+                    {{ form.serverType.label() }}
+                    {{ form.serverType(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />   
+                <div style="margin-left: 50px;">
+                    {{ form.serverClassification.label() }}
+                    {{ form.serverClassification(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />
+                <div style="margin-left: 50px;">
+                    {{ form.serverTransitionType.label() }}
+                    {{ form.serverTransitionType(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />    
+                <div style="margin-left: 50px;">
+                    {{ form.port.label() }}
+                    {{ form.port(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />
+                <div style="margin-left: 50px;">
+                    {{ form.service.label() }}
+                    {{ form.service(style="position:fixed; left:400px; background-color:lightgray; width:400px") }}
+                </div>
+                <br />   
+                <div style="margin-left: 50px;">
+                    {{ form.vlan.label() }}
+                    {{ form.vlan(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />  
+                <div style="margin-left: 50px;">
+                    {{ form.maintenanceMode.label() }} 
+                    {{ form.maintenanceMode(style="position:fixed; left:400px;") }}
+                </div>
+                <br />    
+                <div style="margin-left: 50px;">
+                    <a style="align-self: center;">
+                        {{ form.isActive.label() }}
+                        {{ form.isActive(style="position:fixed; left:400px;") }}
+                    </a>
+                </div>
+                <br />    
+                <div style="margin-left: 50px;">
+                    {{ form.crNumber.label() }}
+                    {{ form.crNumber(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />
+                <div style="margin-left: 50px;">
+                    {{ form.caseNumber.label() }}
+                    {{ form.caseNumber(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />   
+                <div style="margin-left: 50px;">
+                    {{ form.serverInfo.label() }}
+                    {{ form.serverInfo(style="position:fixed; left:400px; background-color:lightgray;") }}
+                </div>
+                <br />               
+                <div style="margin-left: 50px;">
+                    <small>
+                        {{ form.requiredFields.label(class="form-control-label") }}
+                    </small>
+                </div>
+            </fieldset>
+            <br />
+            <div style="margin-left: 50px;">
+                {{ form.clear(style="margin-right: 400px; margin-bottom: 10px;") }}
+                {{ form.submit(style="margin-right: 10px;") }}
+                {{ form.cancel(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+{% endblock content %}
