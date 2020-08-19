@@ -33,5 +33,5 @@ jobs:
       with:
         app-name: 'dataengineeringporta'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_27f87eb4d20340e9b31f2592df1eabc9 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_423b400b38644b85b1acf6ba137cdb57 }}
         package: './myapp.zip'
